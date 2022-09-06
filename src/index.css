@@ -23,3 +23,13 @@ nav {
 .container {
   padding-bottom: 10px;
 }
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+/* .card-title {
+  font-size: 3rem;
+} */
