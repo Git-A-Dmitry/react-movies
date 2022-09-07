@@ -3,6 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: gainsboro;
 }
 
 /* code {
@@ -27,9 +28,29 @@ nav {
 .movies {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 /* .card-title {
   font-size: 3rem;
 } */
+
+.card {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Seaching */
+input[type='text'] {
+  color: #7e57c2;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+::placeholder {
+  color: gray;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.5rem;
+}

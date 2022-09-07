@@ -4,11 +4,11 @@ function Header() {
       <nav className="deep-purple lighten-1">
         <div className="nav-wrapper">
           <a href="#" className="brand-logo">
-            Avant-Garde
+            movie data
           </a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="badges.html">Components</a>
+              <a href="badges.html">Home</a>
             </li>
             <li>
               <a href="collapsible.html">JavaScript</a>
