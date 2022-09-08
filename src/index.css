@@ -54,3 +54,17 @@ input[type='text'] {
   top: 0.2rem;
   right: 0.5rem;
 }
+
+label {
+  /* padding: 5px; */
+  color: #7e57c2;
+  float: right;
+}
+
+label {
+  margin-right: 10px;
+}
+
+/* label:not(:last-child) {
+  margin-right: 1rem;
+} */
