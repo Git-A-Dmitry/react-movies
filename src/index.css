@@ -31,17 +31,33 @@ nav {
   gap: 2rem;
 }
 
-/* .card-title {
-  font-size: 3rem;
-} */
+.card {
+  /* background-color: lightgray; */
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  height: 300px;
+}
+
+.card .card-content {
+  margin-top: 2px;
+}
+
+.card .card-content .card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
 
 .card {
+  color: #7e57c2;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Seaching */
 input[type='text'] {
-  color: #7e57c2;
+  color: dimgray;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
