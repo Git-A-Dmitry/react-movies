@@ -9,6 +9,7 @@ function Movie(props) {
         <img className='activator' src={poster} alt='movies' />
         <span className='card-title activator'>{title}</span>
       </div>
+
       <div className='card-content'>
         {/* <span className='card-title activator'>{title}</span> */}
         <p>

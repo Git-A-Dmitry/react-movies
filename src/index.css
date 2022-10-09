@@ -6,7 +6,6 @@ body {
   background-color: gainsboro;
 }
 
-/* up/down = 0, left/right = 1 */
 nav {
   padding: 0 1rem;
 }
@@ -23,23 +22,22 @@ nav {
 .movies {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* justify-content: space-evenly;
-  grid-template-columns: 300px 300px 300px; */
   gap: 2rem;
 }
 
 .card {
-  /* position: relative; */
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 3px;
 }
 
-.card-image {
-  height: 350px;
+/* .card-image {
+  height: 430px;
 }
 
-/* .activator {
-  height: 350px;
+@media (min-width: 530px) {
+  .card-image {
+    height: 370px;
+  }
 } */
 
 .card .card-image .card-title {
@@ -73,53 +71,12 @@ nav {
   transition: opacity 0.6s 0.6s;
 } */
 
-/* trying to make bluring */
-/* .card::before,
-.card::after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  transition: all 1s;
-}
-
-.card::before {
-  z-index: -1;
-  background: rgba(0, 0, 0, 0);
-}
-
-.card::after {
-  z-index: -2;
-}
-
-.card:hover::before {
-  filter: blur(0.5rem);
-} */
-
-/* .card:hover .activator {
-  background: rgba(0, 0, 0, 0.7);
-} */
-
-/* .card:hover .card-image {
-  opacity: 0.3;
-} */
-
-/* .card .card-content .card-title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.7);
-} */
-
 .card {
-  /* color: #7e57c2; */
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-content p {
   color: azure;
-  /* color: #7e57c2; */
 }
 
 /* Seaching */
@@ -139,7 +96,6 @@ input[type='text'] {
 }
 
 label {
-  /* padding: 5px; */
   color: #7e57c2;
   float: right;
 }

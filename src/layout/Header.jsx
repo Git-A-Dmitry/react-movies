@@ -1,9 +1,9 @@
 function Header() {
   return (
     <div>
-      <nav className='deep-purple lighten-1'>
+      <nav className='indigo lighten-1'>
         <div className='nav-wrapper'>
-          <a href='#' className='brand-logo'>
+          <a href='!#' className='brand-logo'>
             Movie Fans
           </a>
           <ul id='nav-mobile' className='right hide-on-med-and-down'>
@@ -11,7 +11,7 @@ function Header() {
               <a href='badges.html'>Home</a>
             </li>
             <li>
-              <a href='collapsible.html'>JavaScript</a>
+              <a href='collapsible.html'>About</a>
             </li>
           </ul>
         </div>
