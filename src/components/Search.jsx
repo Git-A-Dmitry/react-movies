@@ -31,7 +31,7 @@ const Search = (props) => {
             onKeyDown={handleKey}
           />
 
-          <button className='btn search-btn' onClick={() => searchMovies(search, type)}>
+          <button className='btn search-btn blue-grey darken-3' onClick={() => searchMovies(search, type)}>
             Search
           </button>
         </div>
