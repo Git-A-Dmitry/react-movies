@@ -21,7 +21,7 @@ const Search = (props) => {
     <div className='row'>
       <div className='col s12'>
         <div className='input-field'>
-          <input //
+          <input
             style={{ fontSize: '2rem' }}
             className='validate'
             placeholder='search'
@@ -31,14 +31,17 @@ const Search = (props) => {
             onKeyDown={handleKey}
           />
 
-          <button className='btn search-btn blue-grey darken-3' onClick={() => searchMovies(search, type)}>
+          <button
+            className='btn search-btn blue-grey darken-3'
+            onClick={() => searchMovies(search, type)}
+          >
             Search
           </button>
         </div>
 
         <div>
           <label>
-            <input //
+            <input
               name='type'
               type='radio'
               data-type='all'
@@ -49,7 +52,7 @@ const Search = (props) => {
           </label>
 
           <label>
-            <input //
+            <input
               name='type'
               type='radio'
               data-type='movie'
@@ -60,7 +63,7 @@ const Search = (props) => {
           </label>
 
           <label>
-            <input //
+            <input
               name='type'
               type='radio'
               data-type='series'
