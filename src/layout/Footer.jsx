@@ -1,9 +1,10 @@
 function Footer() {
   return (
     <>
-      <footer className='page-footer blue-grey darken-3'>
-        <div className='container'>
-          © {new Date().getFullYear()} Copyright Text
+      <footer className='footer'>
+        {/* <div className='container'> */}
+        <div className='footer__content'>
+          © {new Date().getFullYear()} All Rights Reserve
           <a
             className='grey-text text-lighten-4 right'
             href='https://github.com/Git-A-Dmitry/react-movies'

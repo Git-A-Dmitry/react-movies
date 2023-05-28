@@ -4,7 +4,10 @@ function Movies(props) {
   const { movies = [] } = props;
 
   return (
-    <div className='movies'>
+    <div
+      id='#movies'
+      className='movies'
+    >
       {movies.length ? (
         movies.map((movie) => (
           <Movie
@@ -13,7 +16,9 @@ function Movies(props) {
           />
         ))
       ) : (
-        <h4>Movie not found.</h4>
+        <div className='movies__heading'>
+          <h5>Movie not found</h5>
+        </div>
       )}
     </div>
   );

@@ -21,7 +21,7 @@ function Main() {
   };
 
   useEffect(() => {
-    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=tomorrow`)
+    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=dark`)
       .then((response) => response.json())
       .then((data) => setMovies(data.Search), setLoading(false))
       .catch((err) => {

@@ -1,0 +1,14 @@
+.hero {
+  height: 90vh;
+  overflow: hidden;
+  /* background-image: url('../public/rachit-khurana-unsplash.jpg'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../../public/joker.jpg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+
+  @media (width >= 800px) {
+    background-position: center;
+  }
+}

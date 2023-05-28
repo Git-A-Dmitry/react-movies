@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Search.scss';
 
 const Search = (props) => {
   const { searchMovies } = props;
@@ -18,28 +19,22 @@ const Search = (props) => {
   };
 
   return (
-    <div className='row'>
-      <div className='col s12'>
-        <div className='input-field'>
+    <div className='search'>
+      <div className='search__wrapper'>
+        <div className='search__input'>
           <input
-            style={{ fontSize: '2rem' }}
             className='validate'
-            placeholder='search'
-            type='text'
+            // placeholder='search'
+            type='search'
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             onKeyDown={handleKey}
           />
 
-          <button
-            className='btn search-btn blue-grey darken-3'
-            onClick={() => searchMovies(search, type)}
-          >
-            Search
-          </button>
+          <button onClick={() => searchMovies(search, type)}>Search</button>
         </div>
 
-        <div>
+        <div className='search__radio'>
           <label>
             <input
               name='type'
@@ -48,7 +43,7 @@ const Search = (props) => {
               onChange={handleFilter}
               checked={type === 'all'}
             />
-            <span>All</span>
+            <span className='radio-text'>All</span>
           </label>
 
           <label>
@@ -59,7 +54,7 @@ const Search = (props) => {
               onChange={handleFilter}
               checked={type === 'movie'}
             />
-            <span>Movies</span>
+            <span className='radio-text'>Movies</span>
           </label>
 
           <label>
@@ -70,7 +65,7 @@ const Search = (props) => {
               onChange={handleFilter}
               checked={type === 'series'}
             />
-            <span>Series</span>
+            <span className='radio-text'>Series</span>
           </label>
         </div>
       </div>
