@@ -8,6 +8,7 @@
   &__image {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 
     @media (width >= 800px) {
       height: 430px;

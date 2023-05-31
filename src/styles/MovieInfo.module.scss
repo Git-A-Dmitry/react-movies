@@ -1,0 +1,33 @@
+.movie-info {
+  min-height: 95vh;
+  width: 90%;
+  margin-top: 7em;
+  margin-left: 5em;
+
+  h2 {
+    color: #fff;
+  }
+}
+
+.content {
+  display: flex;
+  color: #fff;
+}
+
+.synopsis {
+  margin-left: 3em;
+  font-size: 1.2rem;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin: 1em 0;
+    color: #bdc3c7;
+  }
+
+  span {
+    color: #ecf0f1;
+  }
+}

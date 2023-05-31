@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Movies } from '../components/Movies';
 import { Search } from '../components/Search';
 import { Preloader } from '../components/Preloader';
+import Hero from './Hero';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -32,6 +33,7 @@ function Main() {
 
   return (
     <main className='container content'>
+      <Hero />
       <Search searchMovies={searchMovies} />
       {loading ? <Preloader /> : <Movies movies={movies} />}
     </main>

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { TbCards } from 'react-icons/tb';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+
 import '../styles/Header.scss';
 
 function Header() {
@@ -13,8 +15,9 @@ function Header() {
   return (
     <div className='header'>
       <nav className='navbar'>
-        <a
-          href='/'
+        <Link
+          // href='/'
+          to='/'
           className='navbar__logo'
         >
           <TbCards
@@ -22,7 +25,7 @@ function Header() {
             style={{ color: 'fff9' }}
           />
           Movie Cards
-        </a>
+        </Link>
 
         <div
           className='navbar__hamburger'
@@ -45,26 +48,31 @@ function Header() {
           <li className='navbar__nav-item'>
             <Link
               to='hero'
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={700}
+              // spy={true}
+              // smooth={true}
+              // offset={-50}
+              // duration={700}
               onClick={closeMenu}
             >
               Hero
             </Link>
           </li>
+
           <li className='navbar__nav-item'>
             <Link
               to='movies'
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={700}
+              // spy={true}
+              // smooth={true}
+              // offset={-50}
+              // duration={700}
               onClick={closeMenu}
             >
               Cards
             </Link>
+          </li>
+
+          <li className='navbar__nav-item'>
+            <Link to='about'>About</Link>
           </li>
         </ul>
       </nav>
