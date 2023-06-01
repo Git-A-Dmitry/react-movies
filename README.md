@@ -1,6 +1,6 @@
-# React Movie App
+## React Movie App
 
-## Technologies
+### Technologies
 - HTML
 - SCSS
 - JavaScript
@@ -10,7 +10,7 @@
 - React-Router-Dom 6
 - API: OMDb
 
-## Features
+### Features
 - Movie Search: Users can enter the name of a movie in the search bar to find relevant results.  
 The app dynamically fetches data from the movie API and displays a list of movie cards based on the search query.
 
@@ -19,6 +19,6 @@ about the selected movie. This includes information such as the movie's plot, ca
 
 - Responsive Design: The app is designed to work on different screen sizes, including mobile devices.
 
-## Acknowledgements
-API Provider: OMDb API
+### Acknowledgements
+API Provider: OMDb API  
 React creators
