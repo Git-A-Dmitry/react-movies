@@ -47,7 +47,7 @@ function Header() {
         <ul className={menu ? 'navbar__nav-menu active' : 'navbar__nav-menu'}>
           <li className='navbar__nav-item'>
             <Link
-              to='hero'
+              to='/'
               // spy={true}
               // smooth={true}
               // offset={-50}
@@ -60,19 +60,11 @@ function Header() {
 
           <li className='navbar__nav-item'>
             <Link
-              to='movies'
-              // spy={true}
-              // smooth={true}
-              // offset={-50}
-              // duration={700}
+              to='about'
               onClick={closeMenu}
             >
-              Cards
+              About
             </Link>
-          </li>
-
-          <li className='navbar__nav-item'>
-            <Link to='about'>About</Link>
           </li>
         </ul>
       </nav>

@@ -26,8 +26,10 @@ function Movie(props) {
         {/* <span className='card__title'>{title}</span> */}
       </div>
 
+      <p className='card__title'>{title}</p>
+
       <div className='card__content'>
-        <span className='card__title'>{title}</span>
+        {/* <span className='card__title'>{title}</span> */}
 
         <div className='card__details'>
           <p>{year}</p>
@@ -35,13 +37,7 @@ function Movie(props) {
         </div>
       </div>
 
-      <Link
-        to={`/info/${id}`}
-        // onClick={() => props.setInfo(id)}
-        // onClick={handleClick}
-      >
-        More
-      </Link>
+      {/* <Link to={`/info/${id}`}>More</Link> */}
     </div>
   );
 }

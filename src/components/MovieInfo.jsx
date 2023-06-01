@@ -16,11 +16,15 @@ const MovieInfo = (props) => {
   }, [id]);
 
   return (
-    <div className={styles['movie-info']}>
-      {/* <h2>Movie Info</h2> */}
-
+    <div
+      className={styles['movie-info']}
+      // style={{ backgroundImage: `url(${moreInfo.Poster})` }}
+    >
       {moreInfo && (
-        <div className={styles.content}>
+        <div
+          className={styles.content}
+          style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${moreInfo.Poster})` }}
+        >
           <img
             src={moreInfo.Poster}
             alt={moreInfo.Title}
@@ -40,6 +44,9 @@ const MovieInfo = (props) => {
               Language: <span>{moreInfo?.Language}</span>
             </p>
             <p>
+              Country: <span>{moreInfo?.Country}</span>
+            </p>
+            <p>
               Rated: <span>{moreInfo?.Rated}</span>
             </p>
             <p>
@@ -50,6 +57,15 @@ const MovieInfo = (props) => {
             </p>
             <p>
               Director: <span>{moreInfo?.Director}</span>
+            </p>
+            <p>
+              Actors: <span>{moreInfo?.Actors}</span>
+            </p>
+            <p>
+              Awards: <span>{moreInfo?.Awards}</span>
+            </p>
+            <p>
+              Box Office: <span>{moreInfo?.BoxOffice}</span>
             </p>
           </div>
         </div>

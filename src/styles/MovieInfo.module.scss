@@ -3,6 +3,10 @@
   width: 90%;
   margin-top: 7em;
   margin-left: 5em;
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
 
   h2 {
     color: #fff;
@@ -10,8 +14,14 @@
 }
 
 .content {
+  height: 80vh;
   display: flex;
   color: #fff;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .synopsis {
