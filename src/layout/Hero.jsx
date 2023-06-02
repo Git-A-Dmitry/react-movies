@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Hero.scss';
+// import joker from '../joker.jpg';
 
 const Hero = () => {
   return (
@@ -7,7 +8,11 @@ const Hero = () => {
       id='#hero'
       className='hero'
     >
-      {/* <h4 style={{ color: '#fff9' }}>Find The Poster</h4> */}
+      {/* <img
+        src={joker}
+        alt='joker'
+      /> */}
+      {/* <h2 style={{ color: '#fff' }}>Let's play, shall we..</h2> */}
     </div>
   );
 };

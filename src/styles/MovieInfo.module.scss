@@ -1,12 +1,11 @@
 .movie-info {
   min-height: 95vh;
-  width: 90%;
-  margin-top: 7em;
-  margin-left: 5em;
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
+
+  @media (width >= 800px) {
+    width: 90%;
+    margin-top: 7em;
+    margin-left: 5em;
+  }
 
   h2 {
     color: #fff;
@@ -14,19 +13,28 @@
 }
 
 .content {
-  height: 80vh;
   display: flex;
+  flex-direction: column;
   color: #fff;
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  @media (width >= 800px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .synopsis {
-  margin-left: 3em;
+  padding: 0 15px;
   font-size: 1.2rem;
+
+  @media (width >= 800px) {
+    margin-left: 3em;
+  }
 
   h2 {
     margin-bottom: 1em;

@@ -1,14 +1,43 @@
 .hero {
-  height: 90vh;
+  position: relative;
+  height: 70vh;
+  margin-top: 5rem;
   overflow: hidden;
-  /* background-image: url('../public/rachit-khurana-unsplash.jpg'); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../../public/joker.jpg');
+  opacity: 0.5;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../../public/joker-mobile.jpg');
   background-size: cover;
   background-position: right;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   /* background-attachment: fixed; */
+  animation-name: face;
+  animation-duration: 4s;
 
   @media (width >= 800px) {
+    height: 90vh;
+    margin-top: 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../../public/joker.jpg');
+
     background-position: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.3;
+
+    @media (width >= 800px) {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@keyframes face {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
   }
 }

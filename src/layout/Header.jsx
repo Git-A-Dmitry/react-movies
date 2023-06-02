@@ -16,7 +16,6 @@ function Header() {
     <div className='header'>
       <nav className='navbar'>
         <Link
-          // href='/'
           to='/'
           className='navbar__logo'
         >
