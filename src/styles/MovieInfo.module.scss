@@ -15,8 +15,8 @@
 .content {
   display: flex;
   flex-direction: column;
+  padding-top: 7em;
   color: #fff;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,6 +25,19 @@
   @media (width >= 800px) {
     display: flex;
     flex-direction: row;
+    padding-top: 0rem;
+  }
+
+  img {
+    height: 380px;
+    width: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+
+    @media (width <= 800px) {
+      display: none;
+    }
   }
 }
 

@@ -47,9 +47,6 @@ const MovieInfo = (props) => {
               Country: <span>{moreInfo?.Country}</span>
             </p>
             <p>
-              Rated: <span>{moreInfo?.Rated}</span>
-            </p>
-            <p>
               Released: <span>{moreInfo?.Released}</span>
             </p>
             <p>
