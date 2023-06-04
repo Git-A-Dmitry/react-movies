@@ -1,3 +1,5 @@
+import '../styles/Footer.scss';
+
 function Footer() {
   return (
     <>
@@ -5,14 +7,15 @@ function Footer() {
         {/* <div className='container'> */}
         <div className='footer__content'>
           © {new Date().getFullYear()} All Rights Reserved
-          <a
+          <p>Dmitry Ananin</p>
+          {/* <a
             className='grey-text text-lighten-4 right'
             href='https://github.com/Git-A-Dmitry/react-movies'
             target='_blank'
             rel='noreferrer'
           >
             Repository
-          </a>
+          </a> */}
         </div>
       </footer>
     </>

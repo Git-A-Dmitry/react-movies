@@ -1,0 +1,13 @@
+.footer {
+  height: 5rem;
+  color: #fff;
+  // background-color: #2d3436;
+  // background-color: #2d3436;
+  border-top: 1px solid #fff9;
+
+  &__content {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+}

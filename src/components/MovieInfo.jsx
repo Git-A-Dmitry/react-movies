@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { AiOutlineRollback } from 'react-icons/ai';
 import styles from '../styles/MovieInfo.module.scss';
 
 const MovieInfo = (props) => {
   const { id } = useParams();
 
   const [moreInfo, setMoreInfo] = useState();
+  const navigate = useNavigate();
 
   // prettier-ignore
   useEffect(() => {
@@ -67,6 +69,11 @@ const MovieInfo = (props) => {
           </div>
         </div>
       )}
+
+      <button onClick={() => navigate(-1)}>
+        <AiOutlineRollback />
+        Back
+      </button>
     </div>
   );
 };
