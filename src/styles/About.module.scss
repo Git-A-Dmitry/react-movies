@@ -1,8 +1,13 @@
 .container {
+  width: 90%;
   min-height: 90vh;
   margin: 6em 2em 1em;
   overflow: hidden;
-  color: #fff9;
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../deadpool.jpg);
+  // background-size: contain;
+  // background-position: right;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
 
   @media (width >= 800px) {
     margin: 6em;
@@ -27,7 +32,9 @@
 
   .text {
     padding: 0;
-    font-size: 1.2rem;
+    color: #fff9;
+    line-height: 30px;
+    font-size: 1.3rem;
 
     @media (width >= 800px) {
       padding: 0 2em 3em 3em;
@@ -35,10 +42,22 @@
 
     p {
       padding: 0.5em 0;
+      width: 100%;
+
+      @media (width >= 800px) {
+        width: 80%;
+      }
     }
   }
 
   img {
-    width: 300px;
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+
+    @media (width >= 800px) {
+      width: 450px;
+      height: 600px;
+    }
   }
 }

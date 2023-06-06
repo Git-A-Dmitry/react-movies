@@ -6,6 +6,7 @@
   border: 1px solid #fff9;
   border-radius: 8px;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 
   img {
     height: 380px;
@@ -13,11 +14,11 @@
     object-fit: cover;
     cursor: pointer;
     border-radius: 8px;
+    transition: opacity 0.5s;
 
     &:hover {
-      // opacity: 0.2;
+      opacity: 0.6;
       // transform: scale(1.2);
-      // transition: opacity 0.5s;
       // filter: blur(0.3rem);
     }
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import '../styles/Card.scss';
 
 function Movie(props) {
@@ -7,21 +8,18 @@ function Movie(props) {
 
   const navigate = useNavigate();
 
-  // const handleClick = () => {
-  //   props.setInfo(id);
-  // };
-
   return (
     <div
       id={id}
       className='card'
     >
       <div className='card__image'>
-        <img
+        <motion.img
           className=''
           src={poster}
-          alt='movies'
+          alt={title}
           onClick={() => navigate(`/info/${id}`)}
+          whileHover={{ scale: 1.1, transition: { duration: 0.4 } }}
         />
         {/* <span className='card__title'>{title}</span> */}
       </div>

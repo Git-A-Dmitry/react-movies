@@ -16,12 +16,14 @@
     padding: 0.7em 1.5em;
     color: #fff;
     background-color: #000;
-    border: 1px solid #fff9;
+    border: 1px solid #fff7;
     border-radius: 2px;
     cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
 
     &:hover {
       background-color: lighten(#000, 10%);
+      border: 1px solid #fff7;
     }
 
     @media (width >= 800px) {
@@ -49,8 +51,8 @@
   img {
     height: 380px;
     width: 300px;
+    margin: 10px;
     object-fit: cover;
-    cursor: pointer;
     border-radius: 8px;
 
     @media (width <= 800px) {
