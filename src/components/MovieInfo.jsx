@@ -4,6 +4,8 @@ import axios from 'axios';
 import { AiOutlineRollback } from 'react-icons/ai';
 import styles from '../styles/MovieInfo.module.scss';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 const MovieInfo = (props) => {
   const { id } = useParams();
 
@@ -12,9 +14,7 @@ const MovieInfo = (props) => {
 
   // prettier-ignore
   useEffect(() => {
-    axios
-      .get(`https://www.omdbapi.com/?apikey=5f5a59ab&i=${id}`)
-      .then((response) => setMoreInfo(response.data));
+    axios.get(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`).then((response) => setMoreInfo(response.data));
   }, [id]);
 
   return (
@@ -37,34 +37,44 @@ const MovieInfo = (props) => {
             <br />
             <p>{moreInfo.Plot}</p>
             <p>
-              Genre: <span>{moreInfo?.Genre}</span>
+              <span>Genre: </span>
+              {moreInfo?.Genre}
             </p>
             <p>
-              IMDB Rating: <span>{moreInfo?.imdbRating}</span>
+              <span>IMDB Rating: </span>
+              {moreInfo?.imdbRating}
             </p>
             <p>
-              Language: <span>{moreInfo?.Language}</span>
+              <span>Language: </span>
+              {moreInfo?.Language}
             </p>
             <p>
-              Country: <span>{moreInfo?.Country}</span>
+              <span>Country: </span>
+              {moreInfo?.Country}
             </p>
             <p>
-              Released: <span>{moreInfo?.Released}</span>
+              <span>Released: </span>
+              {moreInfo?.Released}
             </p>
             <p>
-              Runtime: <span>{moreInfo?.Runtime}</span>
+              <span>Runtime: </span>
+              {moreInfo?.Runtime}
             </p>
             <p>
-              Director: <span>{moreInfo?.Director}</span>
+              <span>Director: </span>
+              {moreInfo?.Director}
             </p>
             <p>
-              Actors: <span>{moreInfo?.Actors}</span>
+              <span>Actors: </span>
+              {moreInfo?.Actors}
             </p>
             <p>
-              Awards: <span>{moreInfo?.Awards}</span>
+              <span>Awards: </span>
+              {moreInfo?.Awards}
             </p>
             <p>
-              Box Office: <span>{moreInfo?.BoxOffice}</span>
+              <span>Box Office: </span>
+              {moreInfo?.BoxOffice}
             </p>
           </div>
         </div>
