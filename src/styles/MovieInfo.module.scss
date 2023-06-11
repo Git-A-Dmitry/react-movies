@@ -13,7 +13,7 @@
 
   button {
     margin: 10px 15px;
-    padding: 0.7em 1.5em;
+    padding: 1em 2.4em;
     color: #fff;
     background-color: #000;
     border: 1px solid #fff7;
@@ -51,9 +51,9 @@
   img {
     height: 380px;
     width: 300px;
-    margin: 10px;
+    // margin: 10px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 4px;
 
     @media (width <= 800px) {
       display: none;
@@ -69,8 +69,20 @@
     margin-left: 3em;
   }
 
-  h2 {
-    margin-bottom: 1em;
+  .title {
+    h2 {
+      display: inline-block;
+      margin-bottom: 1em;
+    }
+
+    p {
+      display: inline-block;
+      margin-left: 1.5em;
+      padding: 5px;
+      font-size: 1.2rem;
+      border: 2px solid #f39c12;
+      border-radius: 50%;
+    }
   }
 
   p {
